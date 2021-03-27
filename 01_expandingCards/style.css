@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+
+.card {
+    background: cornflowerblue;
+    padding: 0px;
+    margin: 5px;
+    min-width: 75px;
+    height: 200px;
+    display: inline-block;
+    flex-grow: 1;
+    transition: flex-grow 0.5s ease-in-out;
+}
+
+.card:hover {
+    background: mediumorchid;
+    flex-grow: 3;
+}
