@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    margin-top: 25%;
+}
+
+button {
+    all:unset;
+    background: cornflowerblue;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+button .inactive {
+    background: lightgray;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+.progress .node {
+    border: 2px solid lightgray;
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    text-align: center;
+    color: gray;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    transition: border 0.5s;
+}
+
+.progress .edge {
+    background: linear-gradient(to right, cornflowerblue 50%, lightgrey 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: -4px;
+    margin-right: -4px;
+    padding: 0;
+    width: 50px;
+    height: 2px;
+    transition: .5s ease-out;
+}
+/* 
+.progress .active {
+    border: 2px solid cornflowerblue;
+}
+ */
