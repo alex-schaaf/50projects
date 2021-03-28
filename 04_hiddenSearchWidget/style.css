@@ -1,0 +1,41 @@
+body {
+    background: cornflowerblue;
+    padding-top: 25%;
+}
+
+.search {
+    display: flex;
+    background: white;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: fit-content;
+    height: 2rem;
+    
+}
+
+.search-field {
+    flex: 1;
+    width: 0;
+    padding: 0;
+    border: 0;
+    transition-duration: 0.25s;
+    font-size: 1rem
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+.search-btn {
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+
+.search svg {
+    height: 1.75rem;
+}
