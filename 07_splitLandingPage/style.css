@@ -1,0 +1,44 @@
+:root {
+  --mouseenter-width: 65%;
+  --mouseleave-width: 35%;
+  --transition-speed: 1000ms;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container div {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.hover-left .left {
+  width: var(--mouseenter-width);
+}
+
+.hover-left .right {
+  width: var(--mouseleave-width);
+}
+
+.hover-right .left {
+  width: var(--mouseleave-width);
+}
+
+.hover-right .right {
+  width: var(--mouseenter-width);
+}
+
+.left,
+.right {
+  transition: all var(--transition-speed) ease-in-out;
+}
